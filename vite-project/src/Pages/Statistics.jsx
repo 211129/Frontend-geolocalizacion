@@ -5,12 +5,14 @@ import StatisticsCard from "../Components/StatisticsCard";
 import Chart from "../Components/Chart";
 import Header from "../Components/Header";
 import StatisticsDetails from "../Components/StatisticsDetails";
+import { useNavigate } from "react-router-dom";
 
 const Statistics = () => {
   const { authState } = useAuth();
   const [data, setData] = useState(null);
   const [chartData, setChartData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const chartTitles = {
     "temperature": "Temperatura",
@@ -56,7 +58,7 @@ const Statistics = () => {
         <button
         className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
         onClick={() => {
-          window.location.href = "/statistics/details";
+          navigate("/statistics/details");
         }}
       >
         Ver detalles
