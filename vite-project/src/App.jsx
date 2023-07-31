@@ -6,6 +6,9 @@ import Mapa from "./Pages/Mapa";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthProvider from "./context/AuthProvider";
 import AdminRoute from "./Components/AuthRoute";
+import Statistics from "./Pages/Statistics";
+import StatisticsDetails from "./Components/StatisticsDetails";
+
 
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/mapa" element={<Mapa />} />
+          <Route path="/statistics" element={<Statistics />} />
+          <Route path="/statistics/details" element={<StatisticsDetails />} />
           <Route element={<AdminRoute />}>
             
           </Route>
