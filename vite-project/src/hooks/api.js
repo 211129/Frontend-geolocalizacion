@@ -1,4 +1,4 @@
-const BASE_URL = 'http://3.232.226.37';
+const BASE_URL = 'https://apigya.ddns.net';
 
 export const registerUser = async (userData) => {
   try {
