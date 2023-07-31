@@ -10,7 +10,6 @@ import Statistics from "./Pages/Statistics";
 import StatisticsDetails from "./Components/StatisticsDetails";
 
 
-
 function App() {
   return (
     <BrowserRouter>

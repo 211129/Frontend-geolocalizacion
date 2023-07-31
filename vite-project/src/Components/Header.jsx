@@ -23,12 +23,8 @@ function Header() {
                 <Link to="/login" onClick={logout}>
                   Logout
                 </Link>
-                <img
-                  src={authState.user.profile}
-                  width={40}
-                  height={40}
-                  className="rounded-circle ms-2"
-                />
+                
+                <Link to="/statistics">Estadisticas</Link>
               </>
             ) : (
               <>              
