@@ -1,0 +1,15 @@
+#home {
+    height: 100vh;
+    min-height: 500px;
+    background: url(../Img/suba.png);
+    position: relative;
+    
+}
+
+#home .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
